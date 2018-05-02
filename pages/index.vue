@@ -28,7 +28,7 @@ import AppLogo from '~/components/AppLogo.vue'
 
 export default {
   async asyncData() {
-    const { data } = await axios.get(`http://admin.fausfore.eu/article`)
+    const { data } = await this.$axios.get(`http://admin.fausfore.eu/article`)
     return { articles: data }
   },
   components: {
