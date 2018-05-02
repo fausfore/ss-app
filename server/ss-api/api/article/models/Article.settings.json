@@ -1,0 +1,24 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "article",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "multiple": false,
+      "unique": true,
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "multiple": false,
+      "unique": true,
+      "type": "text"
+    }
+  }
+}
