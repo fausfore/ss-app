@@ -18,6 +18,7 @@
           target="_blank"
           class="button--grey">GitHub</a>
       </div>
+      <pre>{{ articles }}</pre>
     </div>
   </section>
 </template>
@@ -26,6 +27,10 @@
 import AppLogo from '~/components/AppLogo.vue'
 
 export default {
+  asyncData() {
+    const { data } = await axios.get(`http://admin.fausfore.eu/article`)
+    return { articles: data }
+  },
   components: {
     AppLogo
   }
