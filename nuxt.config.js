@@ -16,6 +16,9 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  axios: {
+    // proxyHeaders: false
+  },
   /*
   ** Customize the progress bar color
   */
